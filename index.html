@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">   
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">   
 </head>
 <body>
     
@@ -153,9 +156,11 @@
                         <p>Tiết kiệm, giảm chi phí liên quan đến việc sử dụng phim X-Quang, giảm bớt đáng kể lượng vật tư tiêu hao như túi đựng phim, phim các loại. Các chi phí tiết kiệm được từ việc giảm in phim, mua phim sẽ được tái đầu tư để hiện đại hóa ứng dụng CNTT tại cơ sở khám, chữa bệnh.</p>
                     </div>
                 </div>
+
                 <div class="col-md-4 device">
                     <img src="assets/img/rispacs.png" class="img-fluid" alt="" style="margin: 70% auto;">
                 </div>
+
                 <div class="col-md-4">
                     <div class="benefit-block">
                         <img src="assets/img/benefiticon3.png" alt="">
@@ -170,9 +175,51 @@
                 </div>
 
             </div>
-
-
         </div>
+
+    </section>
+
+    <!-- overview section -->
+     <section id="overview" class="overview">
+
+        <div class="container">
+
+            <div class="row section-title justify-content-center">
+                <h2 class="section-title-heading">Tổng quan</h2>
+                <p class="section-description-heading">Giải pháp cho bệnh viện không phim được thiết kế trên nền công nghệ Web, Docker, Microservices chuẩn dữ liệu Y tế (DICOM, HL7) cung cấp khả năng mở rộng, đáp ứng đa dạng nhu cầu xử lý chẩn đoán hình ảnh, nâng cao hiệu suất công việc, tối ưu hóa quy trình làm việc của các cơ sở khám bệnh, chữa bệnh</p>
+            </div>
+
+            <div class="overviews-slider swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <img src="assets/img/2dviewer.png" class="overview-img" alt="">
+                    </div><!-- End overview item -->
+
+                    <div class="swiper-slide">
+                      <img src="assets/img/3dviewer.png" class="overview-img" alt="">
+                    </div><!-- End overview item -->
+
+                    <div class="swiper-slide">
+                        <img src="assets/img/viewer.png" class="overview-img" alt="">
+                    </div><!-- End overview item -->
+
+                    <div class="swiper-slide">
+                      <img src="assets/img/ris.png" class="overview-img" alt="">
+                    </div><!-- End overview item -->
+
+                    <div class="swiper-slide">
+                      <img src="assets/img/mis.png" class="overview-img" alt="">
+                    </div><!-- End overview item -->
+
+                    <div class="swiper-slide">
+                      <img src="assets/img/mis-mdt.png" class="overview-img" alt="">
+                    </div><!-- End overview item -->
+
+                </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
     </section>
 
@@ -340,6 +387,38 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>   
-    <script src="assets/js/custom.js" ></script>   
+    <script src="assets/js/custom.js" ></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.overviews-slider', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+
+          1200: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          }
+        }
+      });
+    </script>
 </body>
 </html>

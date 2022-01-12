@@ -105,7 +105,7 @@ h2.section-title-heading {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 8rem;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
     position: relative;
 }
 
@@ -139,7 +139,7 @@ h2.section-title-heading {
 
 .image-box img {
     position: absolute;
-    top: 2.5rem;
+    top: 3.5rem;
     z-index: 1;
 }
 
@@ -184,7 +184,6 @@ h2.section-title-heading {
 
 #benefits {
     background-color: #fafafa;
-    padding-bottom: 6rem;
     margin-top: 3rem;
 }
 
@@ -213,6 +212,90 @@ h2.section-title-heading {
     color: var(--body-color);
     font-size: 1rem;
     line-height: 1.7rem;
+}
+
+/*--------------------------------------------------------------
+# overviews
+--------------------------------------------------------------*/
+#overview {
+    margin-bottom: 10rem;
+}
+
+.section-description-heading {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+    padding-bottom: 4rem !important;
+}
+
+.swiper-slide {
+  background: #fff;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.overviews .overview-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: #111;
+}
+.overviews .overview-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 0 45px;
+}
+.overviews .overview-item .quote-icon-left, .overviews .overview-item .quote-icon-right {
+  color: #d8dee1;
+  font-size: 26px;
+}
+.overviews .overview-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+.overviews .overview-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+.overviews .overview-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: #f4f6f7;
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+.overviews .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.overviews .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #009cea;
+}
+.overviews .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #009cea;
 }
 
 /* ============ policies =============== */
