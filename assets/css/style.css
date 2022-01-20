@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap');
 
 :root {
-    --main-accent-color: #03bad5;
+    --main-accent-color: #2b7ace;
     --section-title-color-dark: #37474f;
     --body-color: #495057;
 }
@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -22,9 +22,22 @@ h1 {
     font-weight: 800;
 }
 
+a {
+  color: #2487ce;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #469fdf;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
 .logo-vnpt {
     width: 160px;
-
 }
 
 .btn-white {
@@ -89,11 +102,11 @@ h2.section-title-heading {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #27778b;
+    color: #000000;
 }
 
 .navbar.active {
-    background-color: rgba(0,172,217, 0.7);
+    background-color: rgb(43 122 206);
     box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
 }
 
@@ -101,7 +114,7 @@ h2.section-title-heading {
 /* ============ HERO =============== */
 
 #hero {
-    background-image: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52)), url('../img/background.jpg');
+    background-image: linear-gradient(to right, rgb(0 87 217 / 62%), rgb(0 154 179)), url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 8rem;
@@ -139,7 +152,8 @@ h2.section-title-heading {
 
 .image-box img {
     position: absolute;
-    top: 3.5rem;
+    top: -3.5rem;
+    left: 4rem;
     z-index: 1;
 }
 
@@ -150,9 +164,9 @@ h2.section-title-heading {
 }
 
 #about h3 {
-    color: var(--section-title-color-dark);
-    font-weight: 600;
-    font-size: 1.5rem;
+    color: #124265;
+    font-weight: 700;
+    font-size: 24px;
     text-transform: uppercase;
 }
 
@@ -184,7 +198,8 @@ h2.section-title-heading {
 
 #benefits {
     background-color: #fafafa;
-    margin-top: 3rem;
+    margin-top: 6rem;
+    margin-bottom: -2rem;
 }
 
 #benefits img {
@@ -198,9 +213,9 @@ h2.section-title-heading {
 }
 
 #benefits .benefit-block h3 {
-    color: var(--section-title-color-dark);
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 24px;
+    color: #124265;
     text-transform: uppercase;
 }
 
@@ -208,17 +223,23 @@ h2.section-title-heading {
     padding-bottom: 1rem;
 }
 
+#benefits .benefit-block i {
+    padding-bottom: 1rem;
+    color: var(--main-accent-color);
+}
+
 #benefits .benefit-block p {
     color: var(--body-color);
     font-size: 1rem;
     line-height: 1.7rem;
+    text-align: justify;
 }
 
 /*--------------------------------------------------------------
 # overviews
 --------------------------------------------------------------*/
 #overview {
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .section-description-heading {
@@ -229,10 +250,11 @@ h2.section-title-heading {
 .swiper {
   width: 100%;
   height: 100%;
+  margin-top: 3rem;
 }
 
 .swiper-wrapper {
-    padding-bottom: 4rem !important;
+  padding-bottom: 4rem !important;
 }
 
 .swiper-slide {
@@ -246,6 +268,52 @@ h2.section-title-heading {
   display: block;
   border-radius: 10px 10px 10px 10px;
 }
+
+.swiper-slide .overview-title {
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: -1rem;
+  color: var(--body-color);
+  font-size: 1rem;
+}
+
+
+/*--------------------------------------------------------------
+# About Video
+--------------------------------------------------------------*/
+.iframe-video {
+  width: 100%;
+  height: 100%;
+}
+.about-video .content {
+  font-size: 15px;
+}
+.about-video .content h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #124265;
+}
+.about-video .content ul {
+  margin-left: 2rem;
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+.about-video .content ul li {
+  padding-bottom: 10px;
+  position: relative;
+}
+.about-video .content ul i {
+  font-size: 24px;
+  color: #2487ce;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.about-video .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============ overviews =============== */
 
 .overviews .overview-item h3 {
   font-size: 18px;
@@ -301,7 +369,7 @@ h2.section-title-heading {
 /* ============ policies =============== */
 
 #policies {
-    background-image: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52)), url('../img/policy.jpg');
+    background-image: linear-gradient(to right, rgb(0 87 217 / 62%), rgb(0 154 179)), url('../img/policy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 15rem;
@@ -336,7 +404,7 @@ h2.section-title-heading {
 }
 
 #policies .policies-title .policies-btns {
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 #policies .policies-title .policies-btns a {
@@ -360,8 +428,7 @@ h2.section-title-heading {
 }
 
 .policy-content {
-    margin-left: -150px;
-    margin-right: -150px;
+    font-size: 1px
 }
 
 /* ============ achievement =============== */
@@ -430,7 +497,7 @@ h2.section-title-heading {
 }
 
 #achievement .achievement-table .table-footer a {
-    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    background: linear-gradient(to right, rgb(0 87 217 / 62%), rgb(0 154 179));
     padding: .8rem 2rem;
     border-radius: 2rem;
     color: #ffffff;
@@ -440,8 +507,8 @@ h2.section-title-heading {
 #achievement .achievement-table .table-footer a:hover {
     text-decoration: none;
     background: #ffffff;
-    color: rgba(0,172,217, 0.62);
-    border: 2px solid rgba(0,172,217, 0.62);
+    color: var(--main-accent-color);
+    border: 2px solid var(--main-accent-color);
 }
 
 #achievement .table-header {
@@ -450,7 +517,7 @@ h2.section-title-heading {
 }
 
 #achievement .achievement-table .table-header {
-    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    background: linear-gradient(to right, rgb(0 87 217 / 62%), rgb(0 154 179));
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: #ffffff;
@@ -480,13 +547,14 @@ h2.section-title-heading {
 }
 
 .statistic:nth-child(1) {
-    border-right: solid;
-    border-color: rgba(0,172,217, 0.62);
+    border-right: 1px solid;
+    border-color: var(--main-accent-color);
 }
 
 .statistic-title {
-    color: rgba(0,172,217, 0.62);
+    color: var(--main-accent-color);
     font-size: 3.5rem;
+    font-weight: 900;
 }
 
 
@@ -512,7 +580,7 @@ h2.section-title-heading {
 }
 
 .btn-contact {
-    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    background: linear-gradient(to right, rgb(0 87 217 / 62%), rgb(0 154 179));
     padding: .5rem 2.2rem;
     color: #ffffff;
     font-weight: 600;
@@ -521,9 +589,9 @@ h2.section-title-heading {
 }
 
 .btn-contact:hover {
-    background: #ffffff;
-    color: rgba(0,172,217, 0.62);
-    border: 2px solid rgba(0,172,217, 0.62);
+    background: rgb(0 87 217 / 62%);
+    color: #ffffff;
+    border: 2px solid var(--main-accent-color);
 }
 
 #contact .contact-details ul li {
@@ -531,12 +599,12 @@ h2.section-title-heading {
 }
 
 #contact .contact-details ul li i {
-    color: rgba(0,172,217, 0.62);
+    color: var(--main-accent-color);
 }
 
 /* ============ Footer =============== */
 #footer {
-    background-color: #2b323f;
+    background-color: var(--main-accent-color);
     padding-top: 6rem;
     padding-bottom: 2rem;
     position: relative;
@@ -545,7 +613,7 @@ h2.section-title-heading {
 #footer::before {
     content: '';
     position: absolute;
-    background-color: #2b323f;
+    background-color: var(--main-accent-color);
     width: 100%;
     height: 45%;
     transform: skewY(-2deg);
@@ -565,7 +633,7 @@ h2.section-title-heading {
 
 #footer .social-icons a {
     margin-right: 10px;
-    color: #8d8c8c;
+    color: #000000;
 }
 
 .copyright p {
