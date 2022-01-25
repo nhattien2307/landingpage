@@ -152,8 +152,7 @@ h2.section-title-heading {
 
 .image-box img {
     position: absolute;
-    top: -3rem;
-    left: 4rem;
+    margin-left: 2rem;
     z-index: 1;
 }
 
@@ -490,6 +489,8 @@ h2.section-title-heading {
 }
 
 .contact-ul {
+    font-size: 14px;
+    line-height: 28px;
     list-style-type: none;
     margin-left: 1.5em;
     padding-left: 0;
@@ -675,7 +676,7 @@ h2.section-title-heading {
 
 /* ============ Footer =============== */
 #footer {
-    background-color: var(--main-accent-color);
+    background-color: rgb(13 79 155);
     padding-top: 4rem;
     position: relative;
 }
