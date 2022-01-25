@@ -152,7 +152,7 @@ h2.section-title-heading {
 
 .image-box img {
     position: absolute;
-    top: -3.5rem;
+    top: -3rem;
     left: 4rem;
     z-index: 1;
 }
@@ -712,33 +712,42 @@ h2.section-title-heading {
     color: #000000;
 }
 
-.copyright p {
+#footer .copyright p {
     margin-top: 1rem;
     color: #ffffff;
     font-size: .9rem;
+}
+
+#footer .right {
+    margin-top: 1.5rem;
+}
+
+#footer h3 {
+    font-size: 20px;
+    color: #ffffff;
 }
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #2b7ace;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #2b7ace;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
 }
 
 #myBtn:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 /*--------------------------------------------------------------
@@ -746,120 +755,120 @@ h2.section-title-heading {
 --------------------------------------------------------------*/
 
 .contact-demo {
-  margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 
 .contact-demo .info {
-  padding: 20px 40px;
-  background: #f1f3f6;
-  color: #47536e;
-  text-align: center;
-  border: 1px solid #fff;
+    padding: 20px 40px;
+    background: #f1f3f6;
+    color: #47536e;
+    text-align: center;
+    border: 1px solid #fff;
 }
 .contact-demo .info i {
-  font-size: 48px;
-  color: #9fb2d8;
-  margin-bottom: 15px;
+    font-size: 48px;
+    color: #9fb2d8;
+    margin-bottom: 15px;
 }
 .contact-demo .info h4 {
-  padding: 0;
-  margin: 0 0 10px 0;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
 }
 .contact-demo .info p {
-  font-size: 15px;
+    font-size: 15px;
 }
 .contact-demo .php-email-form {
-  width: 100%;
+    width: 100%;
 }
 .contact-demo .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
 }
 .contact-demo .php-email-form .error-message br + br {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 .contact-demo .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
 }
 .contact-demo .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
 }
 .contact-demo .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
 }
 .contact-demo .php-email-form label {
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 5px;
-  color: #8a8c95;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+    color: #8a8c95;
 }
 .contact-demo .php-email-form input, .contact-demo .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
 }
 .contact-demo .php-email-form input:focus, .contact-demo .php-email-form textarea:focus {
-  border-color: #5777ba;
+    border-color: #5777ba;
 }
 .contact-demo .php-email-form input {
-  padding: 10px 15px;
+    padding: 10px 15px;
 }
 .contact-demo .php-email-form textarea {
-  padding: 12px 15px;
+    padding: 12px 15px;
 }
 .contact-demo .php-email-form button[type=submit] {
-  background: #fff;
-  border: 2px solid var(--main-accent-color);
-  padding: 10px 24px;
-  color: var(--main-accent-color);
-  transition: 0.4s;
-  border-radius: 50px;
-  margin-top: 5px;
+    background: #fff;
+    border: 2px solid var(--main-accent-color);
+    padding: 10px 24px;
+    color: var(--main-accent-color);
+    transition: 0.4s;
+    border-radius: 50px;
+    margin-top: 5px;
 }
 .contact-demo .php-email-form button[type=submit]:hover {
-  background: #5777ba;
-  color: #fff;
+    background: #5777ba;
+    color: #fff;
 }
 @media (max-width: 1024px) {
-  .contact-demo .php-email-form {
-    padding: 30px 15px 15px 15px;
-  }
+    .contact-demo .php-email-form {
+      padding: 30px 15px 15px 15px;
+    }
 }
 @media (max-width: 768px) {
-  .contact-demo .php-email-form {
-    padding: 15px 0 0 0;
-  }
+    .contact-demo .php-email-form {
+      padding: 15px 0 0 0;
+    }
 }
 
 .contact-header {
-  background-color: var(--main-accent-color);
-  height: 80px;
+    background-color: var(--main-accent-color);
+    height: 80px;
 }
 
 .contact-logo {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
